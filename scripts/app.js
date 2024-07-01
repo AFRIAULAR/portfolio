@@ -57,8 +57,9 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>Explora estos recursos para ampliar tus conocimientos y mejorar tus habilidades en programación.</p>
       <div class="resources">
         <p>Documentación de Flappy Mario: <a style="color:white" href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:6950d03f-bbb0-4562-93b8-3ef5c5d2b915" download="nombre-archivo-1.pdf"><br>Descargar PDF</a></p>
-        <p>Cómo configurar la clave SSH en GIT <a style="color:white" href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:6950d03f-bbb0-4562-93b8-3ef5c5d2b915" download="nombre-archivo-1.pdf"><br>Descargar PDF</a></p>
-        
+        <br>
+        <p>Cómo configurar la clave SSH en GIT <a style="color:white" href=https://github.com/AFRIAULAR/info/blob/main/ssh-key.md" ><br>Ir al repositorio</a></p>
+
       </div>
     `,
     contactTab: `

@@ -1,0 +1,325 @@
+/* Reset de estilos y configuración del tema Dracula */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #282a36;
+  color: #f8f8f2;
+}
+
+/* Clases generales del tema Dracula */
+.theme-dracula {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #282a36;
+  padding: 10px 15px 0px 10px;
+  margin-bottom: 0px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* Contenido Principal */
+.main-container {
+  display: flex;
+}
+
+/* Aside con iconos */
+.aside, .left-column {
+  background: #343746;
+  padding: 10px;
+  margin-top: 30px;
+  height: 100vh;
+  width: 5%; /* 20% del ancho total */
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
+  color: #68769D;
+  text-align: center;
+  font-size: 35px;
+}
+.icon-container :hover{
+  color: white;
+}
+.a-icon{
+  color:  #bd93f9;
+}
+/* Section con pestañas de archivos */
+.file-section, .center-column {
+  background-color: #22222C;
+  padding: 10px;
+  margin-top: 30px;
+  height: 100vh;
+  width: 10%; /* 40% del ancho total */
+}
+
+.file-tab {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #22222C;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Pestañas arriba */
+.right-column .top-tabs {
+  display: flex;
+  background: #282a36;
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.right-column .top-tab {
+  margin-right: 1px;
+  padding: 5px;
+  background: #22222C;
+  cursor: pointer;
+  
+}
+.right-column{
+  width: 85%;
+  
+}
+
+.right-column .top-tab.active {
+  border-top: 2px solid #ff79c6;
+  background-color: #343746;
+
+}
+.center-column .file-tab.active{
+  border: solid 1px #68769D;
+  background-color: #343746;
+}
+
+.content {
+  margin-top: 0;
+  padding: 10px;
+  height: 60vh;
+  width: 100%; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  background: #282a36;
+  padding: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #bd93f9;
+  width: 100%; /* Ancho total */
+}
+
+/* NAV ANIMATION*/
+.title-span{
+  font-size: 88px;
+  text-align: center;
+  display:block;
+  white-space: nowrap;
+  width: 20ch; 
+  animation: typing 5s infinite steps(20), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  margin-right: 20%;
+}
+.p-about {
+  font-size: 18px; /* Ajustar el tamaño de letra para p-about */
+  line-height: 1.6; /* Ajustar el espaciado entre líneas */
+}
+
+.span-about {
+  color: #5C677D; /* Color gris como las líneas de VSC */
+  margin-right: 8px; /* Pequeña distancia a la derecha */
+}
+
+/* PROJECT CARDS*/
+.project-card {
+  background-color: #343746;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #f8f8f2;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #6272a4;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-card a {
+  color: #bd93f9;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects .project-card {
+  width: calc(25% - 20px); /* 50% del ancho menos el margen entre las cards */
+}
+
+/*contactame*/
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #0366d6; /* Color azul utilizado por GitHub para enlaces */
+  text-decoration: none;
+  border-bottom: 1px solid #0366d6; /* Línea de borde inferior al pasar el mouse */
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.contact-info a:hover {
+  border-bottom-color: transparent; /* Ocultar la línea de borde inferior al pasar el mouse */
+}
+
+/* Estilos inspirados en Visual Studio Code */
+.vscode-theme {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vscode-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.vscode-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.resources {
+  margin-top: 15px;
+}
+
+.vscode-link {
+  color: #569cd6;
+  text-decoration: none;
+}
+
+.vscode-link:hover {
+  text-decoration: none;
+}
+@keyframes typing{
+  from {
+    width: 0;
+  }
+}
+@keyframes blink{
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .right-column {
+    width: 70%; /* Reducir el ancho de la columna derecha */
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    flex-direction: column; /* Cambiar a un diseño de columna en pantallas más pequeñas */
+  }
+
+  .left-column, .center-column {
+    width: 100%; /* Ancho completo para el aside y la sección de archivos */
+  }
+
+  .right-column {
+    width: 100%; /* Ancho completo para la columna derecha */
+  }
+
+  .file-section, .center-column {
+    height: auto; /* Ajustar la altura automáticamente según el contenido */
+  }
+
+  .file-tab {
+    margin: 10px; /* Ajustar los márgenes de las pestañas de archivos */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Apilar elementos del navbar en pantallas más pequeñas */
+    align-items: center; /* Centrar elementos del navbar */
+  }
+
+  .logo {
+    width: 80px; /* Reducir el tamaño del logo */
+    height: 80px;
+  }
+
+  .title-span {
+    font-size: 48px; /* Reducir el tamaño del título */
+    margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
+  }
+    .projects .project-card {
+    width: 100%; /* En dispositivos más pequeños, las cards ocupan todo el ancho */
+  }
+  .project-card {
+    flex: 1 0 calc(100% - 20px); /* Ocupa todo el ancho menos el margen entre las cards en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-container {
+    font-size: 28px; /* Reducir el tamaño de los iconos en dispositivos móviles */
+  }
+
+  .file-tab {
+    padding: 8px; /* Ajustar el padding de las pestañas de archivos en dispositivos móviles */
+  }
+
+  .content {
+    height: auto; /* Ajustar la altura del contenido automáticamente en dispositivos móviles */
+  }
+
+  .footer {
+    padding: 5px; /* Reducir el padding del pie de página en dispositivos móviles */
+  }
+      .projects .project-card {
+    width: 100%; /* En dispositivos más pequeños, las cards ocupan todo el ancho */
+  }
+  .project-card {
+    flex: 1 0 calc(100% - 20px); /* Ocupa todo el ancho menos el margen entre las cards en pantallas pequeñas */
+  }
+}
